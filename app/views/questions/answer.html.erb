@@ -1,0 +1,14 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+<h1> <%= @question %></h1>
+<p>
+<% if @question.include? '?' %>
+  Silly question, get dressed and go to work!
+<% elsif @question == 'I am going to work' %>
+  Great!
+<% else %>
+  I don\'t care, get dressed and go to work!
+<% end %>
+</p>
+
+<a href="/ask"> link </a>
